@@ -1,0 +1,20 @@
+-- remove dashs to make active playlist
+--set playlist to "spotify:playlist:"spotify:playlist:0rq4mJBqACLnYeAFuxnViV" --Event Backrgound
+set playlist to "spotify:playlist:7lupuBUZpnap8qoT7R8F62" -- Soundcheck
+--set playlist to "spotify:playlist:6d8R5Ah1jlIeSK0Jg9LDl5" -- Everly Brothers Pre Show
+--set playlist to "spotify:playlist:64m31byvhsfqavO4FU4SQv?si=00ba408479ce4e40" --Chris Tomlin Christmas
+--set playlist to "spotify:album:53fJVD9LpBKEMqdAF7PW5K" -- Bubbles Christmas
+
+tell application "Spotify"
+	activate
+end tell
+
+tell application "Spotify"
+	set sound volume to 100
+	activate
+	play track playlist
+end tell
+
+tell application "QLab"
+	activate
+end tell

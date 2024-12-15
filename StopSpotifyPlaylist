@@ -1,0 +1,18 @@
+--stop & fade out playlist
+property tick : 5 -- change volume level by this many each loop
+property thismany : 0.30 -- seconds to wait before making next change to volume
+
+tell application "Spotify"
+	repeat
+		set snd to sound volume
+		if snd is less than or equal to tick then
+			set sound volume to 0
+			exit repeat
+		end if
+		
+		set sound volume to (snd - tick)
+		delay thismany
+	end repeat
+	pause
+	set sound volume to 100
+end tell

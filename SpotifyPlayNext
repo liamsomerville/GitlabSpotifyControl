@@ -1,0 +1,4 @@
+tell application "Spotify"
+	set sound volume to 100
+	play (next track)
+end tell

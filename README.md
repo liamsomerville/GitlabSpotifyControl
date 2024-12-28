@@ -1,4 +1,4 @@
-# Gitlab Spotify Control
+# Qlab Spotify Control
 Play and control Spotify in Spotify
 
 Some scripts for Spotify Queue Actions to conrtol Spotify
